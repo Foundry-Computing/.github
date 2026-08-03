@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible defect with sanitized evidence.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Search existing issues first. Do not include secrets or private data.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and sanitized evidence
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
