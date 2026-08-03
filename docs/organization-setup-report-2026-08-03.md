@@ -46,6 +46,13 @@ specific least privilege.
   enabled deletion of merged branches.
 - Added the public profile, reusable community health files, issue and pull
   request templates, this agent guide, and this setup report.
+- Added machine-readable labels for status, priority, product, phase, work
+  type, AI owner, and review requirement.
+- Created four non-duplicative seed issues:
+  - [Forge Core Phase 2A](https://github.com/Foundry-Computing/.github/issues/1)
+  - [Forge Core Phase 2B](https://github.com/Foundry-Computing/.github/issues/2)
+  - [forge-vscode Phase 0/1A](https://github.com/Foundry-Computing/.github/issues/3)
+  - [GitHub Organization Foundation](https://github.com/Foundry-Computing/.github/issues/4)
 - No organization visibility, member, team, repository-transfer, branch,
   ruleset, secret, variable, or project-v2 resource was changed.
 
@@ -107,6 +114,9 @@ gh project list --owner Foundry-Computing --format json
 gh repo create Foundry-Computing/.github --public
 gh api -X PATCH repos/Foundry-Computing/.github
 gh api -X PUT repos/Foundry-Computing/.github/topics
+gh label create --repo Foundry-Computing/.github
+gh issue list --repo Foundry-Computing/.github --state all
+gh issue create --repo Foundry-Computing/.github
 ```
 
 ## Rollback guidance
