@@ -1,0 +1,39 @@
+name: Documentation Request
+description: Request a documentation fix or improvement.
+title: "docs: "
+labels: ["type: documentation", "status: needs-triage"]
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Document or area affected
+    validations:
+      required: true
+  - type: textarea
+    id: current_problem
+    attributes:
+      label: Current problem
+    validations:
+      required: true
+  - type: textarea
+    id: desired_improvement
+    attributes:
+      label: Desired improvement
+    validations:
+      required: true
+  - type: input
+    id: audience
+    attributes:
+      label: Intended audience
+    validations:
+      required: true
+  - type: input
+    id: reviewer
+    attributes:
+      label: Technical accuracy reviewer
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true

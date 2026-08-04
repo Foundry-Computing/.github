@@ -1,0 +1,65 @@
+name: Project Task
+description: Track scoped implementation, operations, or governance work.
+title: "task: "
+labels: ["type: task", "status: needs-triage"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+  - type: textarea
+    id: implementation_steps
+    attributes:
+      label: Implementation steps
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: required_tests
+    attributes:
+      label: Required tests
+  - type: textarea
+    id: documentation_changes
+    attributes:
+      label: Documentation changes
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback or recovery considerations
+  - type: input
+    id: ai_owner
+    attributes:
+      label: AI owner
+      placeholder: copilot, codex, forge, local-ai, or none
+  - type: input
+    id: human_reviewer
+    attributes:
+      label: Human reviewer
+      placeholder: "@username"
+  - type: textarea
+    id: completion_gate
+    attributes:
+      label: Completion gate
+    validations:
+      required: true
