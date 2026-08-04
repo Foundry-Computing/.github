@@ -1,0 +1,81 @@
+name: Feature Request
+description: Propose a new capability or meaningful improvement.
+title: "feature: "
+labels: ["type: feature", "status: needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem being solved
+    validations:
+      required: true
+  - type: input
+    id: affected_user
+    attributes:
+      label: User or operator affected
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or product
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - critical
+        - high
+        - medium
+        - low
+        - someday
+    validations:
+      required: true
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated effort
+      options:
+        - xs
+        - s
+        - m
+        - l
+        - xl
+    validations:
+      required: true
+  - type: dropdown
+    id: ai_suitability
+    attributes:
+      label: AI implementation suitability
+      options:
+        - not suitable
+        - partial assistance
+        - suitable with human review
+    validations:
+      required: true
+  - type: textarea
+    id: review_requirements
+    attributes:
+      label: Review requirements
