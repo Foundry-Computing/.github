@@ -18,3 +18,7 @@ Current project areas include:
 Active development is organized through GitHub Issues and the Foundry
 Development project. Significant changes are reviewed, validated, and recorded
 before release.
+
+## FreeBSD virtual graphics research
+
+Follow [our FreeBSD vmwgfx porting experiment for Daemonarchy](https://github.com/Foundry-Computing/daemonarchy-vmwgfx). We are documenting reproducible build milestones, native-interface work and the validation needed for a future VMware DRM driver. The driver is incomplete; native Hyprland is not yet working in the tested guest.
