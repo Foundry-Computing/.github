@@ -1,3 +1,9 @@
+<!-- foundry-brand:start -->
+![Foundry Computing workshop and Foreman, the 8-bit rubber duck](https://raw.githubusercontent.com/Foundry-Computing/.github/main/docs/branding/project-banner.png)
+
+**IT solutions. Built to last.** Meet **Foreman**, our workshop rubber duck.
+<!-- foundry-brand:end -->
+
 # Foundry Computing
 
 We create tools, stories, and experiences that help people preserve knowledge,
